@@ -11,9 +11,9 @@ List<Product> mockProducts = [
 ];
 
 void main() {
-  setupDependencyAssembler();
+  setupLocator();
 
-  var cartViewModel = dependencyAssembler<CartModel>();
+  var cartViewModel = getIt<CartModel>();
 
   cartViewModel.addToCart(mockProducts[0]);
   cartViewModel.addToCart(mockProducts[1]);

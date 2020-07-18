@@ -100,7 +100,7 @@ class CartView extends StatelessWidget {
           : Center(
               child: Text(
                 'Your cart is empty',
-                style: Theme.of(context).textTheme.subtitle,
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             ),
     );

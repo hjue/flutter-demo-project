@@ -9,11 +9,12 @@ class ProductCard extends StatelessWidget {
 
   List<Widget> _getProductDetails(BuildContext context) {
     return [
-      Text(product.name, maxLines: 2, style: Theme.of(context).textTheme.title),
+      Text(product.name,
+          maxLines: 2, style: Theme.of(context).textTheme.headline1),
       Row(
         children: <Widget>[
           Text('\$${product.price.toString()}.00',
-              style: Theme.of(context).textTheme.subtitle),
+              style: Theme.of(context).textTheme.subtitle1),
           IconButton(
             icon: Icon(Icons.add_shopping_cart),
             color: Colors.grey,

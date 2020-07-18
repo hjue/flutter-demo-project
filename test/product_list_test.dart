@@ -23,11 +23,11 @@ final Product mockProduct =
     Product(id: 1, name: "Product1", price: 111, imageUrl: "imageUrl");
 
 void main() {
-  setupDependencyAssembler();
-  var productListViewModel = dependencyAssembler<ProductListModel>();
+  setupLocator();
+  var productListViewModel = getIt<ProductListModel>();
   productListViewModel.api = MockAPI();
 
-  var cartViewModel = dependencyAssembler<CartModel>();
+  var cartViewModel = getIt<CartModel>();
 
   group('Given Product List Page Loads', () {
     test('Page should load a list of products from firebase', () async {

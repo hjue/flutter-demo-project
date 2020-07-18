@@ -11,11 +11,11 @@ class CartItemCard extends StatelessWidget {
   List<Widget> _getProductDetails(BuildContext context) {
     return [
       Text(product.name,
-          maxLines: 2, style: Theme.of(context).textTheme.subtitle),
+          maxLines: 2, style: Theme.of(context).textTheme.subtitle1),
       Text('\$${product.price.toString()}.00',
-          style: Theme.of(context).textTheme.title),
+          style: Theme.of(context).textTheme.headline1),
       Text('\Qty: ${quantity.toString()}',
-          style: Theme.of(context).textTheme.subtitle)
+          style: Theme.of(context).textTheme.subtitle1)
     ];
   }
 

@@ -4,7 +4,7 @@ import 'package:shopnbuy/UI/views/product_list_view.dart';
 import 'package:shopnbuy/helpers/dependency_assembly.dart';
 
 void main() {
-  setupDependencyAssembler();
+  setupLocator();
 
   runApp(ShopNBuyApp());
 }

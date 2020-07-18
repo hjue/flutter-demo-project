@@ -6,7 +6,7 @@ import 'package:shopnbuy/helpers/dependency_assembly.dart';
 import 'base_model.dart';
 
 class ProductListModel extends BaseModel {
-  API api = dependencyAssembler<API>();
+  API api = getIt<API>();
 
   List<Product> _products;
 

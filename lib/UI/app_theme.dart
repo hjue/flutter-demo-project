@@ -4,11 +4,11 @@ class AppTheme {
   static ThemeData get data {
     return ThemeData(
       textTheme: TextTheme(
-        title: TextStyle(
+        headline1: TextStyle(
           fontWeight: FontWeight.w700,
           fontSize: 20.0,
         ),
-        subtitle: TextStyle(
+        subtitle1: TextStyle(
           fontWeight: FontWeight.w300,
           fontSize: 18.0,
         ),

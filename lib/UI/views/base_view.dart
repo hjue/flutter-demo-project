@@ -14,7 +14,7 @@ class BaseView<T extends BaseModel> extends StatefulWidget {
 }
 
 class _BaseViewState<T extends BaseModel> extends State<BaseView<T>> {
-  T model = dependencyAssembler<T>();
+  T model = getIt<T>();
 
   @override
   void initState() {

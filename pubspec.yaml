@@ -14,21 +14,24 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-    
+
+  dio: ^3.0.9
   cupertino_icons: ^0.1.2
-  http: ^0.12.0+2
   get_it: ^3.0.3
   provider: ^3.1.0+1
   path_provider: ^1.4.2
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  pretty_dio_logger: ^1.1.1
+  pedantic: ^1.9.0
 
 flutter:
   uses-material-design: true
